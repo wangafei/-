@@ -1,43 +1,63 @@
-# Welcome to [Astro](https://astro.build)
+![Build Status](https://gitlab.com/pages/astro/badges/master/build.svg)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/starter)
+---
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Example [Astro](https://astro.build) website using GitLab Pages.
 
-## 🚀 Project Structure
+Learn more about GitLab Pages at https://pages.gitlab.io and the official
+documentation https://docs.gitlab.com/ce/user/project/pages/.
 
-Inside of your Astro project, you'll see the following folders and files:
+---
 
-```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+**Table of Contents** _generated with [DocToc](https://github.com/thlorenz/doctoc)_
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- [GitLab CI](#gitlab-ci)
+- [Building locally](#building-locally)
+- [GitLab User or Group Pages](#gitlab-user-or-group-pages)
+- [Did you fork this project?](#did-you-fork-this-project)
+- [Troubleshooting](#troubleshooting)
 
-Any static assets, like images, can be placed in the `public/` directory.
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## 🧞 Commands
+## GitLab CI
 
-All commands are run from the root of the project, from a terminal:
+This project's static Pages are built by [GitLab CI][ci], following the steps
+defined in [`.gitlab-ci.yml`](.gitlab-ci.yml)
 
-| Command           | Action                                       |
-|:----------------  |:-------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3000`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
+## Building locally
 
-## 👀 Want to learn more?
+To work locally with this project, you'll have to follow the steps below:
 
-Feel free to check [our documentation](https://github.com/withastro/astro) or jump into our [Discord server](https://astro.build/chat).
+1. Fork, clone or download this project
+1. Install dependencies: `npm install`
+1. Preview your project while making changes: `npm run start`
+1. Add content
+1. To simulate a static build, run `npm run build`. This is not required.
+1. Commit & push your changes. GitLab will tigger a static build as instructed by the `.gitlab-ci.yml`
+
+Read more at Astro's [documentation][https://docs.astro.build/en/getting-started/].
+
+## GitLab User or Group Pages
+
+To use this project as your user/group website, you will need one additional
+step: just rename your project to `namespace.gitlab.io`, where `namespace` is
+your `username` or `groupname`. This can be done by navigating to your
+project's **Settings**.
+
+Read more about [user/group Pages][userpages] and [project Pages][projpages].
+
+## Did you fork this project?
+
+If you forked this project for your own use, please go to your project's
+**Settings** and remove the forking relationship, which won't be necessary
+unless you want to contribute back to the upstream project.
+
+[ci]: https://about.gitlab.com/gitlab-ci/
+[<project>]: http://link-to-project-main-page
+[install]: http://link-to-install-page
+[documentation]: http://link-to-main-documentation-page
+[userpages]: https://docs.gitlab.com/ce/user/project/pages/introduction.html#user-or-group-pages
+[projpages]: https://docs.gitlab.com/ce/user/project/pages/introduction.html#project-pages
